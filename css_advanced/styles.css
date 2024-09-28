@@ -8,7 +8,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: gray; /* Using the spruce color */
+    background-color: gray; 
     padding: 1em 2em;
     
 }
@@ -28,20 +28,20 @@ body {
     padding: 0.5em 1em;
   }
 
-  .list a:hover {
+.list a:hover {
     background-color: #ECE7E2; /* Linen color for hover effect */
     color: #4A7766;
     border-radius: 5px;
   }
 .hero{
     background-image: url('Object.png');
+    top: 0;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100%;
     Width:100%;
-    margin: 0;
-    padding: 0;
+
 }
 .hero{
     text-align:center;
@@ -69,11 +69,11 @@ body {
     color:white;
 
 }
-.hero-text2{
+.hero{
     text-align: center;
     margin-top:150px;
 }
-.hero-text2 span{
+.hero b{
     color: #C271FF;
     font-Size: 32px;
     font-weight:700;
@@ -114,11 +114,13 @@ body {
     width: 100%;
     margin: 0 auto;
     height: 40%;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
 }
 
 .page-3{
+    display: flex;
+    box-sizing: border-box;
     width: 100%;
     margin: 0 auto;
     height: 40%;
@@ -138,7 +140,7 @@ body {
     color: #a631ff;
 }
 .page-3 content{
-    display: flex;
+    display: grid;
     width: 85%;
     margin-left: 200px;
 
@@ -162,7 +164,61 @@ body {
     text-align: left;
     padding-bottom: 20px;
 }
+.member{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    height: 50vh;
+    border: 1px solid #a631ff;
+    background-color: #071629;
+}
+.member h2,h3,p{
+    color: white;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    text-align: left;
+    font-weight: 700;
+}
+.member b{
+    color: #a631ff;
+}
+.member button{
+    background-color: #a631ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+.faq{
+    display: -ms-inline-grid;
+    justify-content: space-between;
+    padding: 10px;
+    grid-template-columns: 1fr 2fr;
+}
 
+.faq h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    position: relative;
+    justify-items: center;
+}
+.faq h3{
+    font-size: 18px;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding-bottom: 10px;
+}
+.p{
+    color: #07162980;
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    margin: 0;
+    padding-bottom: 5px;
+}
 footer {
     width: 100%;
     height: 249px;
