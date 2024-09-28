@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, "Source Sans Pro";
+    margin: 0;
+    padding: 0;
+  }
+nav{
+
+}
+    
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent; /* Using the spruce color */
+    padding: 1em 2em;
+}
+.list{
+  list-style: none;
+  margin: 10px;
+  padding: 0;
+  display: flex;
+
+}
+.list li {
+    margin-left: 20px;
+}
+.list a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5em 1em;
+  }
+
+  .list a:hover {
+    background-color: #ECE7E2; /* Linen color for hover effect */
+    color: #4A7766;
+    border-radius: 5px;
+  }
+.hero{
+    background-image: url('Object.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    Width:100%;
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    text-align:center;
+}
+.hero h1{
+   font-weight:700;
+   font-Size:120px;
+   margin-bottom:0;
+   color: white;
+   padding-top:80px;
+}
+.hero span{
+    text-decoration: none;
+    color: white;
+    padding: 0.5em 1em;
+}
+.hero button{
+    text-align:center;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background:  #C271FF;
+    border: none;
+    border-radius: 10px;
+    color:white;
+
+}
+.hero-text2{
+    text-align: center;
+    margin-top:150px;
+}
+.hero-text2 span{
+    color: #C271FF;
+    font-Size: 32px;
+    font-weight:700;
+}
+.hero h2{
+    color:white;
+    font-weight:100;
+    font-Size: 32px;
+}
+.team{
+    display:flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+.ppl{
+    width: 200px;
+    color: white;
+}
+.ppl img{
+    border-radius: 50%;
+}
+.page-2{
+    background: #C271FF;
+    height: 392px;
+    justify-content: center;
+    display: block;
+    margin: 0 auto;
+    color: white;
+    border: none;
+        
+}
+.image{
+    display: inline-block;
+}
+.page-2text{
+    display: inline-block;
+}
+.p-2{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.page-3{
+    height: auto;
+}
+.page-3 h2{
+    text-align: center;
+    padding: 35px;
+    font-family: Source Sans Pro;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 75.42px;
+}
+.page-3-content{
+    display: flex;
+    width: 85%;
+    margin-left: 200px;
+
+}
+.page-3-content h3{
+    padding-bottom: 20px;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.11px;
+    text-align: left;
+}
+.page-3-content p{
+    color: #07162980;
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    margin: 0;
+    width: 60%;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+footer {
+    width: 100%;
+    height: 249px;
+    position: relative;
+    background-color: #071629;
+}
+footer img {
+    position: absolute;
+    width: 169px;
+    height: 30px;
+    top: 95px;
+    left: 165px;
+}
+
+footer p {
+    position: absolute;
+    top: 195px;
+    left: 520px;
+    font-size: 12px;
+    color: #fff;
+}
+/* social_icons */
+.icons{
+position: absolute;
+width: 130px;
+left: 850px;
+}
