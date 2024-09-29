@@ -9,14 +9,16 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: gray; 
-    padding: 1em 2em;
+    padding: 10px;
+    margin-bottom: -100px;
     
 }
 .list{
   list-style: none;
-  margin: 10px;
+  margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
 
 }
 .list li {
@@ -25,7 +27,7 @@ body {
 .list a {
     text-decoration: none;
     color: white;
-    padding: 0.5em 1em;
+    padding: 1rem;
   }
 
 .list a:hover {
@@ -38,20 +40,18 @@ body {
     top: 0;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
+    height:140vh;
     Width:100%;
+    text-align: center;
 
 }
-.hero{
-    text-align:center;
-}
+
 .hero h1{
    font-weight:700;
-   font-Size:120px;
+   font-Size:60px;
    margin-bottom:0;
    color: white;
-   padding-top:80px;
+   padding-top:100px;
 }
 .hero span{
     text-decoration: none;
@@ -62,17 +62,14 @@ body {
     text-align:center;
     display: block;
     margin: 20px auto;
-    padding: 10px 20px;
+    padding: 5px 10px;
     background:  #C271FF;
     border: none;
     border-radius: 10px;
     color:white;
 
 }
-.hero{
-    text-align: center;
-    margin-top:150px;
-}
+
 .hero b{
     color: #C271FF;
     font-Size: 32px;
@@ -86,11 +83,11 @@ body {
 .team{
     display:flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 20px;
 
 }
 .ppl{
-    width: 200px;
+    width: 300px;
     color: white;
 }
 .ppl img{
@@ -98,9 +95,11 @@ body {
 }
 .page-2{
     background: #C271FF;
-    height: 392px;
-    justify-content: center;
-    display: block;
+    height: 40vh;
+    width: 100%;
+    justify-content:space-between;
+    text-align: center;
+    display: flex;
     margin: 0 auto;
     color: white;
     border: none;
@@ -108,52 +107,61 @@ body {
 }
 
 .page-2 text{
+    justify-items: center;
+    padding: 70px 100px;
     display: inline-block;
 }
-.page-2{
-    width: 100%;
-    margin: 0 auto;
-    height: 40%;
-    justify-content: space-between;
+.img-2{
     text-align: center;
-}
-
-.page-3{
-    display: flex;
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0 auto;
-    height: 40%;
-    justify-content: center;
-    
-    
+    display: inline-flex;
+    margin: 0;
+    padding: 40px 70px;
+    width: -50px;
+    height: 140px;
+    justify-content: space-around;
 }
 .page-3 h2{
-    text-align: center;
-    padding: 35px;
+    
+    justify-items: center;
+    padding-bottom: 50px;
     font-family: Source Sans Pro;
-    font-size: 60px;
+    font-size: 25px;
     font-weight: 300;
-    line-height: 75.42px;
+    line-height: 42px;
 }
 .page-3 b{
     color: #a631ff;
 }
 .page-3 content{
-    display: grid;
+    display: flex;
+    height: 50vh;
     width: 85%;
-    margin-left: 200px;
+    
 
 }
+.page-3{
+    position: relative;
+    display: inline-flex;
+    justify-content: space-between;
+    text-align: center;
+    top: 150px;
+    width: 100%;
+    margin: 0 ;
+    height: 100vh;
+    padding: 0;    
+    
+}
+
 .page-3 content h3{
     padding-bottom: 20px;
     font-family: Source Sans Pro;
     font-size: 16px;
     font-weight: 700;
     line-height: 20.11px;
-    text-align: left;
+    text-align: center;
 }
-.page-3 content p{
+.page-3 p{
+    position: relative;
     color: #07162980;
     font-family: Source Sans Pro;
     font-size: 14px;
@@ -161,7 +169,7 @@ body {
     width: 60%;
     font-weight: 400;
     line-height: 24px;
-    text-align: left;
+    text-align: center;
     padding-bottom: 20px;
 }
 .member{
@@ -197,6 +205,7 @@ body {
     grid-template-columns: 1fr 2fr;
 }
 
+
 .faq h2{
     font-size: 24px;
     font-weight: 700;
@@ -225,6 +234,7 @@ footer {
     position: relative;
     background-color: #071629;
 }
+
 footer img {
     position: absolute;
     width: 169px;
