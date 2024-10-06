@@ -2,9 +2,16 @@
     margin: 0;
     padding: auto; 
 }
+body{
+    min-height: 100vh;
+    background:url(background1.png) no-repeat ;
+
+    
+
+}
 header{
-    background-color: #4d4d4d88;
-    color: rgb(75, 74, 74);
+    background-color: #4d4d4d93;
+    color: rgb(255, 255, 255);
     padding: 6px;
     text-align: center;
     position: relative;
@@ -16,6 +23,11 @@ header{
 .navbar{
     display: flex;
     justify-content: space-between;
+    color: #ffffff;
+}
+nav a{
+    color: #ffffff;
+    text-decoration: none;
 }
 ul{
     list-style: none;
@@ -35,6 +47,14 @@ li{
     text-decoration: none;
     
 }
+.icons{
+    font-size: 2.2rem;
+    right: 5%;
+    color: #ffffff;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+}
 
 .main{
     background-color: #f2f2f2;
@@ -44,13 +64,15 @@ li{
 .hero{
     margin: 0;
     padding: 0;
-    background-image:url(background1.png) ;
+
+    background-size: cover;
     position: relative;
     width: 100%;
     height: 135vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
   
     
 }
@@ -60,6 +82,7 @@ li{
     justify-content: space-evenly;
     padding: 20px;
     height: 300px;
+    
     
 }
 
@@ -193,8 +216,9 @@ button{
 .contact{
     margin: 0;
     padding: 0;
-    height: 70vh;
+    height: 80vh;
     justify-content: center;
+    flex-direction: column;
 
 }
 .header2{
@@ -217,10 +241,33 @@ button{
 form{
     margin: 0;
     padding: 0;
-    display: flex list-item;
+    display: flex;
     height: 50vh;
     justify-content: space-around;
     align-items: center;
+    flex-direction: column;
+}
+.sbutton{
+    width: 20%;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background-color: rgb(245, 77, 77);
+    cursor: pointer;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+.input{
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 1rem;
+    
 }
 footer{
     margin: 0;
@@ -231,4 +278,29 @@ footer{
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+@media (max-width: 992px){
+    .header{
+        padding: 1.2rem 5%;
+    }
+}
+@media (max-width: 760px){
+    .icons{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4rem;
+        background: #64646463;
+    }
+    nav a{
+        display: block;
+        font-size: 1rem;
+        margin: 1.3rem 0;
+        text-align: center;
+    }
 }
